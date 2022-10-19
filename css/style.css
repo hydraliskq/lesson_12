@@ -1,0 +1,135 @@
+.wrapper {
+	background: green;
+	position: relative;
+	overflow: hidden;
+	min-width: 100%;
+}
+
+.balls {
+	position: relative;
+}
+
+.main__container {
+	background: url(../images/table.png) 0 0 no-repeat;
+	max-width: 1280px;
+	height: 720px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.table {
+	/* padding-top: 100px; */
+	width: 70%;
+	position: relative;
+
+}
+
+.ball {
+	color: white;
+	border-radius: 50%;
+	background: yellow;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+}
+
+.ball-0 {
+	transform: scale(2);
+	color: black;
+	background: white;
+	top: 330px;
+	left: 150px;
+}
+
+.ball-1 {
+	background: red;
+	top: 300px;
+	left: 700px;
+}
+
+.ball-2 {
+	background: green;
+	top: 331px;
+	left: 700px;
+}
+
+.ball-3 {
+	background: grey;
+	top: 362px;
+	left: 700px;
+}
+
+.ball-4 {
+	background: pink;
+	top: 315px;
+	left: 672px;
+}
+
+.ball-5 {
+	top: 347px;
+	left: 672px;
+}
+
+.ball-6 {
+	background: black;
+	top: 330px;
+	left: 645px;
+}
+
+.people:hover + .balls > .ball-0 {
+	transform: scale(1);
+	transition: 2.8s;
+	transform: translate(480px);
+	transition-delay: 2.5s;
+}
+
+.people:hover + .balls > .ball-6 {
+	transform: translate(50px);
+	transition: 2s;
+	transition-delay: 4.7s;
+}
+
+.people:hover + .balls > .ball-5 {
+	transform: translate(50px, 250px);
+	transition: 2s;
+	transition-delay: 4.7s
+}
+
+.people:hover + .balls > .ball-4 {
+	transform: translate(-250px, -220px);
+	transition: 2s;
+	transition-delay: 4.8s
+}
+
+.people:hover + .balls > .ball-3 {
+	transform: translate(350px, 250px);
+	transition: 2s;
+	transition-delay: 4.9s;
+} 
+
+.people:hover + .balls > .ball-2 {
+	transform: translate(100px, 250px);
+	transition: 2s;
+	transition-delay: 4.9s;
+}
+
+.people:hover + .balls > .ball-1 {
+	transform: translate(400px, -200px);
+	transition: 2s;
+	transition-delay: 4.9s;
+}
+
+.people:hover {
+	transform: rotate(10deg);
+	transition: 3s ease;
+}
+
+.people {
+	transform: rotate(-360deg);
+	display: inline;
+	width: 300px;
+	position: absolute;
+	left: -140px;
+	top: 250px;
+}
